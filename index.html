@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>How to Use Torrentio Add-on Inside Stremio</title>
+
+<meta name="robots" content="index, follow">
+<meta name="description" content="A clear, step-by-step guide explaining how to use the Torrentio add-on inside Stremio, including setup, configuration, and everyday usage.">
+<meta name="keywords" content="Torrentio Stremio guide, how to use Torrentio, Stremio add-ons explained, streaming add-on usage">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --bg:#f8fafc;
+  --panel:#ffffff;
+  --primary:#2563eb;
+  --secondary:#3b82f6;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Inter,"Segoe UI",Arial,sans-serif;
+  background:linear-gradient(180deg,#f8fafc,#f1f5f9);
+  color:var(--text);
+  line-height:1.85;
+}
+
+a{
+  color:var(--primary);
+  text-decoration:none;
+  font-weight:600;
+}
+a:hover{color:var(--secondary)}
+
+.hero{
+  padding:100px 20px;
+  text-align:center;
+  background:linear-gradient(135deg,#eef2ff,#f8fafc);
+  border-bottom:1px solid var(--border);
+}
+
+.hero h1{
+  font-size:2.6rem;
+  max-width:1050px;
+  margin:0 auto 22px;
+}
+
+.hero p{
+  max-width:950px;
+  margin:auto;
+  font-size:1.05rem;
+  color:var(--muted);
+}
+
+.container{
+  max-width:1180px;
+  margin:auto;
+  padding:70px 20px;
+}
+
+section{margin-bottom:85px}
+
+h2{
+  font-size:2rem;
+  color:#1e40af;
+  margin-bottom:18px;
+}
+
+h3{
+  margin-top:35px;
+  color:#1f2937;
+}
+
+.card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:36px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.05);
+}
+
+p{margin-bottom:20px}
+
+ul{padding-left:24px}
+li{margin-bottom:10px;color:var(--muted)}
+
+.steps{
+  counter-reset:step;
+}
+.steps li{
+  counter-increment:step;
+  margin-bottom:14px;
+}
+.steps li::marker{
+  font-weight:bold;
+}
+
+.note{
+  background:#eff6ff;
+  border-left:5px solid var(--primary);
+  padding:22px;
+  border-radius:14px;
+  margin:40px 0;
+  color:#1e3a8a;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>How to Use Torrentio Add-on Inside Stremio</h1>
+  <p>
+    A complete, beginner-friendly guide explaining how to install, configure,
+    and use the Torrentio add-on inside Stremio for everyday streaming.
+  </p>
+</div>
+
+<div class="container">
+
+<!-- INTRO -->
+<section>
+<h2>Introduction</h2>
+<p>
+Stremio is designed around an add-on ecosystem that allows users to extend the platform
+without modifying the core application. Add-ons supply catalogs, metadata, and streaming
+links that Stremio can display in a unified interface.
+</p>
+<p>
+This guide explains how to use
+<a href="https://torrentios.org" target="_blank">Torrentio</a>
+inside Stremio in a clear and practical way. The focus is on understanding how the add-on
+fits into Stremio’s workflow rather than promoting any specific use case.
+</p>
+</section>
+
+<!-- WHAT IS TORRENTIO -->
+<section>
+<h2>What Is Torrentio in the Context of Stremio?</h2>
+<div class="card">
+<p>
+Torrentio is a Stremio-compatible add-on that supplies streaming link references when a
+user opens a movie or TV series page. It does not replace Stremio or control playback.
+</p>
+<p>
+Once installed, Torrentio becomes one of several data providers that Stremio can query
+when looking for available streams.
+</p>
+</div>
+</section>
+
+<!-- BEFORE INSTALL -->
+<section>
+<h2>What You Need Before Using Torrentio</h2>
+<ul>
+<li>A working installation of Stremio</li>
+<li>Internet connectivity</li>
+<li>Basic familiarity with Stremio’s interface</li>
+</ul>
+<p>
+No advanced configuration is required to get started, making Torrentio suitable for
+users who prefer minimal setup.
+</p>
+</section>
+
+<!-- INSTALLATION -->
+<section>
+<h2>Installing Torrentio Inside Stremio</h2>
+<div class="card">
+<p>
+Installing an add-on in Stremio is straightforward. The process involves enabling the
+add-on so that Stremio can query it when needed.
+</p>
+
+<ul class="steps">
+<li>Open Stremio on your device</li>
+<li>Navigate to the Add-ons section</li>
+<li>Locate the option to install add-ons via URL</li>
+<li>Confirm installation</li>
+</ul>
+
+<p>
+Once installed, Torrentio becomes active immediately and requires no restart.
+</p>
+</div>
+</section>
+
+<!-- HOW IT APPEARS -->
+<section>
+<h2>How Torrentio Appears Inside Stremio</h2>
+<p>
+After installation, Torrentio does not appear as a separate app or menu. Instead, it
+works in the background.
+</p>
+<div class="note">
+Torrentio only becomes visible when you open a movie or series and view available streams.
+</div>
+<p>
+Stremio lists available streams from all enabled add-ons together, clearly labeled for
+easy selection.
+</p>
+</section>
+
+<!-- USING IT -->
+<section>
+<h2>Using Torrentio When Watching Movies or Series</h2>
+<div class="card">
+<p>
+Using Torrentio is mostly passive. When you select a title in Stremio, the platform
+automatically queries installed add-ons.
+</p>
+<p>
+If Torrentio finds matching sources, they appear in the stream list alongside other
+providers.
+</p>
+</div>
+</section>
+
+<!-- STREAM SELECTION -->
+<section>
+<h2>Understanding Stream Options</h2>
+<p>
+Each stream option usually includes information such as resolution, file size, and source
+type. This helps users make informed choices.
+</p>
+<ul>
+<li>Higher resolution may require better bandwidth</li>
+<li>Larger files may take longer to load</li>
+<li>Multiple options improve reliability</li>
+</ul>
+</section>
+
+<!-- CONFIGURATION -->
+<section>
+<h2>Configuration and Customization</h2>
+<div class="card">
+<p>
+Some users choose to adjust add-on behavior through available configuration settings.
+These options may influence how results are filtered or displayed.
+</p>
+<p>
+Configuration flows for add-ons are explained in broader Stremio documentation, such as
+<a href="https://addon-link-flow.vercel.app/" target="_blank">
+add-on link flow references
+</a>,
+which describe how Stremio communicates with external add-ons.
+</p>
+</div>
+</section>
+
+<!-- PERFORMANCE -->
+<section>
+<h2>Performance and Responsiveness</h2>
+<p>
+Because Torrentio operates on demand, performance depends on network speed and response
+time from external indexes.
+</p>
+<div class="note">
+If streams take time to appear, waiting a few seconds usually resolves the issue.
+</div>
+</section>
+
+<!-- COMMON ISSUES -->
+<section>
+<h2>Common Usage Questions</h2>
+<div class="card">
+<h3>Why don’t I see any streams?</h3>
+<p>
+Availability depends on external sources. Some titles may have limited or temporary
+availability.</p>
+
+<h3>Do I need to manage Torrentio manually?</h3>
+<p>
+No. Once installed, it runs automatically until disabled or removed.</p>
+</div>
+</section>
+
+<!-- PRIVACY -->
+<section>
+<h2>Privacy and Add-on Boundaries</h2>
+<p>
+Stremio add-ons operate within defined technical boundaries. They respond to requests but
+do not control playback or user accounts.
+</p>
+<p>
+Understanding these boundaries helps users feel confident using add-ons responsibly.
+</p>
+</section>
+
+<!-- BEST PRACTICES -->
+<section>
+<h2>Best Practices for Smooth Usage</h2>
+<ul>
+<li>Keep Stremio updated</li>
+<li>Enable only the add-ons you use</li>
+<li>Allow a few seconds for results to load</li>
+<li>Understand that availability can change</li>
+</ul>
+</section>
+
+<!-- FUTURE -->
+<section>
+<h2>How Add-on Usage May Evolve</h2>
+<div class="card">
+<p>
+As Stremio evolves, add-on systems are expected to become more efficient and user-friendly.
+Better metadata handling and faster responses will likely improve everyday usage.
+</p>
+</div>
+</section>
+
+<!-- CONCLUSION -->
+<section>
+<h2>Conclusion</h2>
+<p>
+Using Torrentio inside Stremio is a straightforward process that requires minimal effort
+from the user. Once installed, the add-on works quietly in the background, supplying
+streaming link references when available.
+</p>
+<p>
+By understanding how Torrentio fits into Stremio’s add-on ecosystem, users can navigate
+the platform more confidently and efficiently.
+</p>
+</section>
+
+</div>
+
+</body>
+</html>
